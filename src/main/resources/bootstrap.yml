@@ -1,0 +1,19 @@
+
+server:
+  port: 8888
+ 
+spring:
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/applepie1130/config-file.git
+          username: applepie1130
+          password: Tjdwnsdk33!
+          force-pull: true
+          repos:
+            open-mart-api:
+              uri: https://github.com/applepie1130/open-mart-config-file.git
+              username: applepie1130
+              password: Tjdwnsdk33! 
+              pattern: open-mart-api/*
