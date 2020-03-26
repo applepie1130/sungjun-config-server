@@ -1,13 +1,12 @@
+## Default ##
 HELP.md
 .gradle
 build/
 !gradle/wrapper/gradle-wrapper.jar
-!**/src/main/**
-!**/src/test/**
+#!**/src/main/**
+#!**/src/test/**
 
-##############################
-## Java
-##############################
+## Java ##
 .mtj.tmp/
 *.class
 *.jar
@@ -18,19 +17,44 @@ hs_err_pid*
 *.tmp
 *.bak
 *.swp
-bin/
+/bin/
+target/
 tmp/
+classes/
+META-INF/
 
 
+## Package Files ##
+*.jar
+*.war
+*.ear
+*.db
 
-### STS ###
+
+## OS ##
+.DS_Store
+Thumbs.db
+
+
+## STS ##
 .apt_generated
 .classpath
 .factorypath
 .project
-.settings
+.settings/
+.loadpath
+*.tmp
+*.bak
+*.swp
 .springBeans
 .sts4-cache
+*.launch
+
+
+## Files that might appear on external disk
+.Spotlight-V100
+.Trashes
+
 
 ### IntelliJ IDEA ###
 .idea
@@ -39,6 +63,7 @@ tmp/
 *.ipr
 out/
 
+
 ### NetBeans ###
 /nbproject/private/
 /nbbuild/
@@ -46,5 +71,61 @@ out/
 /nbdist/
 /.nb-gradle/
 
-### VS Code ###
+
+## VS Code ##
 .vscode/
+
+
+
+.metadata
+bin/
+temp/
+*~.nib
+local.properties
+
+# maven build directory
+**/target/
+**/.settings/
+
+# Eclipse Core
+**/.project
+
+# External tool builders
+**/.externalToolBuilders/
+
+# Locally stored "Eclipse launch configurations"
+**/*.launch
+
+# PyDev specific (Python IDE for Eclipse)
+**/*.pydevproject
+
+# CDT-specific (C/C++ Development Tooling)
+**/.cproject
+
+# JDT-specific (Eclipse Java Development Tools)
+**/.classpath
+
+# Java annotation processor (APT)
+**/.factorypath
+
+# PDT-specific (PHP Development Tools)
+**/.buildpath
+
+# sbteclipse plugin
+**/.target
+
+# Tern plugin
+**/.tern-project
+
+# TeXlipse plugin
+**/.texlipse
+
+# STS (Spring Tool Suite)
+**/.springBeans
+
+# Code Recommenders
+**/.recommenders/
+
+# node / node_modules
+**/node/
+**/node_modules/
