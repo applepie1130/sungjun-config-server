@@ -22,3 +22,13 @@ spring:
               force-pull: true
               refresh-rate: 0
               delete-untracked-branches: true
+            open-mart-apigateway:
+              uri: https://github.com/applepie1130/open-mart-gateway-config-file.git
+              timeout: 10
+              username: ${spring.cloud.config.server.git.username}
+              password: ${spring.cloud.config.server.git.password}
+              pattern: open-mart-apigateway/*
+              skip-ssl-validation: true
+              force-pull: true
+              refresh-rate: 0
+              delete-untracked-branches: true
